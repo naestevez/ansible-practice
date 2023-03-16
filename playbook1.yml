@@ -1,0 +1,15 @@
+---
+
+- name: ping and display
+  hosts: localhost
+
+  tasks:
+  - name: ping local ansible system
+    ping:
+
+  - name: display the details of the two text files
+    find:
+      path: .
+      file_type: file
+      
+
